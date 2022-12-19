@@ -1,0 +1,31 @@
+--学生信息表
+create table  student(
+stuid  bigint primary key identity(1,1),--用户id
+stuname varchar(30),--学生姓名
+stuxuehao varchar(30) not null unique,--学生学号（登录的用户名）
+stupasswd   varchar(30) not null,--密码
+stugrade varchar(30),--年级
+stumajor varchar(30),--专业
+stusex varchar(2) default '男',--性别
+stuborn varchar(30),--出生日期
+role	varchar(30) default '学生',
+)
+--管理员信息表
+create table  manager(
+manid  bigint primary key identity(1,1),--用户id
+manname varchar(30) not null unique,--用户名
+role	varchar(30) default '管理员',
+manpasswd varchar(30) not null,--密码
+)
+--课程表
+create table  class(
+claid  bigint primary key identity(1,1),--课程id
+claname varchar(30),--课程名
+teacher varchar(30),--老师姓名
+)
+--选课表（选课id，课程id，学生id，成绩）
+create table  sc(
+scid  bigint primary key identity(1,1),--选课id
+stuxuehao varchar(30) constraint ssc_id references student(stuxuehao),--学生学号
+claid bigint constraint scc_id references class(claid),--课程id
+)

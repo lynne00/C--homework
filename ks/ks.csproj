@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95EBFD78-B760-4920-9058-3EB5BE22FBB3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ks</RootNamespace>
+    <AssemblyName>ks</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddManForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddManForm.Designer.cs">
+      <DependentUpon>AddManForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStuForm.Designer.cs">
+      <DependentUpon>AddStuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChakeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChakeForm.Designer.cs">
+      <DependentUpon>ChakeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XuankeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XuankeForm.Designer.cs">
+      <DependentUpon>XuankeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KaikeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KaikeForm.Designer.cs">
+      <DependentUpon>KaikeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KesheForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KesheForm.Designer.cs">
+      <DependentUpon>KesheForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStuForm.Designer.cs">
+      <DependentUpon>UpdateStuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePwdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePwdForm.Designer.cs">
+      <DependentUpon>UpdatePwdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuanliyuanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuanliyuanForm.Designer.cs">
+      <DependentUpon>GuanliyuanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentForm.Designer.cs">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddManForm.resx">
+      <DependentUpon>AddManForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStuForm.resx">
+      <DependentUpon>AddStuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChakeForm.resx">
+      <DependentUpon>ChakeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KaikeForm.resx">
+      <DependentUpon>KaikeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KesheForm.resx">
+      <DependentUpon>KesheForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePwdForm.resx">
+      <DependentUpon>UpdatePwdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuanliyuanForm.resx">
+      <DependentUpon>GuanliyuanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UpdateStuForm.resx">
+      <DependentUpon>UpdateStuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XuankeForm.resx">
+      <DependentUpon>XuankeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
